@@ -41,7 +41,7 @@ Group by continent
 order by TotalDeathCount desc
 --The North America was the continent that has highest number of deaths while Oceania was opposite
 
--- Countries with highest death count per Population
+-- Countries with the highest death count per Population
 Select Location, MAX(cast(Total_deaths as int)) as TotalDeathCount
 From SQL.dbo.covid_deaths
 --Where location like '%vietnam%'
