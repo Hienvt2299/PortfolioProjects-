@@ -50,8 +50,8 @@ Group by Location
 order by TotalDeathCount desc
 --United States was the country that recorded the highest number of deaths
 
--- Population vs Vaccinations
--- Shows Percentage of Population that has recieved Covid Vaccine
+-- Deaths & Vaccinations
+-- Shows the rate of deaths after vaccinations
 Select dea.continent , dea.location, dea.date, dea.total_deaths, (dea.total_deaths/dea.population)*100 as DeathPercentage, vac.people_fully_vaccinated, (vac.people_fully_vaccinated/dea.population)*100 as PercentPopulationvaccinated
 From SQL.dbo.covid_deaths dea
 Join SQL.dbo.covid_vaccinations vac
